@@ -1,0 +1,32 @@
+<form name="addressForm" id="address_form">
+  <table>
+    <tr>
+      <th>Address type : </th>
+      <td>
+        <select name="addressType">
+          <option value="WORK">WORK</option>
+          <option value="PRIVATE">PRIVATE</option>
+          <option value="VACATION">VACATION</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>Street and number : </th>
+      <td>
+        <input type="text" name="streetAndNumber" value="${streetAndNumber}"/>
+      </td>
+    </tr>
+    <tr>
+      <th>Zip code : </th>
+      <td>
+        <input type="text" name="zipCode" value="${zipCode}"/>
+      </td>
+    </tr>
+    <tr>
+      <th>City :</th>
+      <td>
+        <input type="text" name="city" value="${city}"/>
+      </td>
+    </tr>
+  </table>
+</form>

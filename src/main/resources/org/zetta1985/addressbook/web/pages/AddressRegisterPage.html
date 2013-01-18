@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+  xml:lang="ja" lang="ja">
+<head>
+<title>Home</title>
+</head>
+<body>
+<div id="head"></div>
+<div id="content">
+<!-- Extension -->
+<wicket:extend>
+  <div>
+  Add address for contact : <span wicket:id="name"></span>
+  </div>
+  <form wicket:id="form">
+    <p>
+      <input type="hidden" name="identifier" value="" wicket:id="identifier"/>
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Address type</th>
+          <td>
+            <select name="addressType" wicket:id="addressType"></select>
+          </td>
+        </tr>
+        <tr>
+          <th>Street and number :</th>
+          <td>
+            <input name="streetAndNumber" wicket:id="streetAndNumber"/>
+          </td>
+        </tr>
+        <tr>
+          <th>Zip code :</th>
+          <td>
+            <input name="zipCode" wicket:id="zipCode"/>
+          </td>
+        </tr>
+        <tr>
+          <th>City :</th>
+          <td>
+            <input name="city" wicket:id="city"/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="submit" value="Submit" wicket:id="submit"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</wicket:extend>
+</div>
+<div id="footer"></div>
+</body>
+</html>

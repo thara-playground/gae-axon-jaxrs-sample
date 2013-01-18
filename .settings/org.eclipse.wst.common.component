@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="zetta1985">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/.apt_generated"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <property name="context-root" value="zetta1985"/>
+        <property name="java-output-path" value="/zetta1985/target/zetta1985/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

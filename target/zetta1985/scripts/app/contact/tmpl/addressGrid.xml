@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rows>
+  <page>${currentPage}</page>
+  <total>${pageCount}</total>
+  <records>${allCount}</records>
+  {{each list}}
+  <row id="${key.id}">
+    <cell>${addressType}</cell>
+    <cell>${streetAndNumber}</cell>
+    <cell>${zipCode}</cell>
+    <cell>${city}</cell>
+  </row>
+  {{/each}}
+</rows>

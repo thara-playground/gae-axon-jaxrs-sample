@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+  xml:lang="ja" lang="ja">
+<head>
+<title>Home</title>
+</head>
+<body>
+<div id="head"></div>
+<div id="content">
+<!-- Extension -->
+<wicket:extend>
+  <div>
+  Addresses for : <span wicket:id="name"></span>
+  </div>
+  <p>
+    <a href="#" wicket:id="registerLink">Create a new address</a>
+  </p>
+  <table class="hor-minimalist-b">
+    <thead>
+      <tr>
+          <th>Type</th>
+          <th>Street and number</th>
+          <th>Zipcode</th>
+          <th>City</th>
+          <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr wicket:id="addressList">
+        <td wicket:id="addressType"></td>
+        <td wicket:id="streetAndNumber"></td>
+        <td wicket:id="zipCode"></td>
+        <td wicket:id="city"></td>
+        <td>
+          <a href="#" wicket:id="removeLink">Remove</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</wicket:extend>
+</div>
+<div id="footer"></div>
+</body>
+</html>
